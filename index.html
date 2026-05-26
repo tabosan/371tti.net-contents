@@ -9,19 +9,52 @@ is_complete: true
 ---
 <style>
     .top-title {
-        font-size: 6em;
-        line-height: 1.2em;
-        font-weight: bold;
-        color: var(--color-text-1);
         padding: 0;
-        display: inline-block;
+        margin: 0;
+        line-height: 1;
     }
 
-    .top-subtitle {
-        font-size: 1.2em;
-        color: var(--color-text-0);
-        padding: 0;
-        display: inline-block;
+    .top-title-svg {
+        width: min(94vw, 780px);
+        height: auto;
+        display: block;
+    }
+
+    .title-char-prestroke {
+        fill: transparent;
+        stroke: var(--color-text-0);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        opacity: 0;
+
+        stroke-dasharray: var(--dash, 300);
+        stroke-dashoffset: var(--dash, 300);
+
+        animation: char-prewrite 0.3s cubic-bezier(.25, .8, .25, 1) forwards;
+        animation-delay: calc(var(--i) * 40ms);
+    }
+
+    .title-char-stroke {
+        fill: transparent;
+        stroke: var(--color-text-1);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+
+        stroke-dasharray: var(--dash, 300);
+        stroke-dashoffset: var(--dash, 300);
+
+        animation: char-write 1s cubic-bezier(.25, .8, .25, 1) forwards;
+        animation-delay: calc(var(--i) * 40ms + 400ms);
+    }
+
+    .title-char-fill {
+        fill: var(--color-text-1);
+        opacity: 0;
+
+        animation: char-fill .6s cubic-bezier(.22, 1, .36, 1) forwards;
+        animation-delay: calc(var(--i) * 40ms + 600ms);
     }
 
     .top {
@@ -40,11 +73,76 @@ is_complete: true
         padding: 0;
     }
 
-    @media (max-width: 600px) {
-        .top-title {
-            font-size: 3em;
+    @keyframes char-prewrite {
+        0% {
+            opacity: 0;
+            stroke-dashoffset: var(--dash, 300);
         }
 
+        18% {
+            opacity: .38;
+        }
+
+        72% {
+            opacity: .28;
+        }
+
+        100% {
+            opacity: 0;
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes char-write {
+        from {
+            stroke-dashoffset: var(--dash, 300);
+        }
+
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes char-fill {
+        0% {
+            opacity: 0;
+            filter: blur(3px);
+        }
+
+        65% {
+            opacity: .9;
+            filter: blur(.5px);
+        }
+
+        100% {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .top-title-svg {
+            width: min(94vw, 520px);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .title-char-prestroke,
+        .title-char-stroke,
+        .title-char-fill,
+
+        .title-char-prestroke {
+            opacity: 0;
+        }
+
+        .title-char-stroke {
+            stroke-dashoffset: 0;
+        }
+
+        .title-char-fill {
+            opacity: 1;
+            filter: none;
+        }
     }
 </style>
 
@@ -52,25 +150,76 @@ is_complete: true
     <header>
         <h2>371tti.net</h2>
     </header>
+
     <div class="center">
         <div>
-            <h1 class="top-title">371TTI.NET</h1>
-            <h2 class="top-subtitle">ただの個人サイト</h2>
+            <h1 class="top-title" aria-label="371TTI.NET">
+                <svg class="top-title-svg" viewBox="0 0 720 120" role="img" aria-hidden="true">
+                    <g
+                        font-size="86"
+                        font-weight="700"
+                        font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace"
+                        text-anchor="middle"
+                        dominant-baseline="middle"
+                    >
+                        <!-- pre stroke -->
+                        <text class="title-char-prestroke" style="--i: 0" x="126" y="64">3</text>
+                        <text class="title-char-prestroke" style="--i: 1" x="178" y="64">7</text>
+                        <text class="title-char-prestroke" style="--i: 2" x="230" y="64">1</text>
+                        <text class="title-char-prestroke" style="--i: 3" x="282" y="64">T</text>
+                        <text class="title-char-prestroke" style="--i: 4" x="334" y="64">T</text>
+                        <text class="title-char-prestroke" style="--i: 5" x="386" y="64">I</text>
+                        <text class="title-char-prestroke" style="--i: 6" x="438" y="64">.</text>
+                        <text class="title-char-prestroke" style="--i: 7; --dash: 390" x="490" y="64">N</text>
+                        <text class="title-char-prestroke" style="--i: 8" x="542" y="64">E</text>
+                        <text class="title-char-prestroke" style="--i: 9" x="594" y="64">T</text>
+
+                        <!-- stroke -->
+                        <text class="title-char-stroke" style="--i: 0" x="126" y="64">3</text>
+                        <text class="title-char-stroke" style="--i: 1" x="178" y="64">7</text>
+                        <text class="title-char-stroke" style="--i: 2" x="230" y="64">1</text>
+                        <text class="title-char-stroke" style="--i: 3" x="282" y="64">T</text>
+                        <text class="title-char-stroke" style="--i: 4" x="334" y="64">T</text>
+                        <text class="title-char-stroke" style="--i: 5" x="386" y="64">I</text>
+                        <text class="title-char-stroke" style="--i: 6" x="438" y="64">.</text>
+                        <text class="title-char-stroke" style="--i: 7; --dash: 390" x="490" y="64">N</text>
+                        <text class="title-char-stroke" style="--i: 8" x="542" y="64">E</text>
+                        <text class="title-char-stroke" style="--i: 9" x="594" y="64">T</text>
+
+                        <!-- fill -->
+                        <text class="title-char-fill" style="--i: 0" x="126" y="64">3</text>
+                        <text class="title-char-fill" style="--i: 1" x="178" y="64">7</text>
+                        <text class="title-char-fill" style="--i: 2" x="230" y="64">1</text>
+                        <text class="title-char-fill" style="--i: 3" x="282" y="64">T</text>
+                        <text class="title-char-fill" style="--i: 4" x="334" y="64">T</text>
+                        <text class="title-char-fill" style="--i: 5" x="386" y="64">I</text>
+                        <text class="title-char-fill" style="--i: 6" x="438" y="64">.</text>
+                        <text class="title-char-fill" style="--i: 7" x="490" y="64">N</text>
+                        <text class="title-char-fill" style="--i: 8" x="542" y="64">E</text>
+                        <text class="title-char-fill" style="--i: 9" x="594" y="64">T</text>
+                    </g>
+                </svg>
+            </h1>
         </div>
     </div>
+
     <div class="block">
         <hr>
+
         <div class="grid3">
             <a href="/index.md" class="button">
                 <h2 class="zero-padding">Index</h2>
             </a>
+
             <a href="/tools" class="button">
                 <h2 class="zero-padding">Tools</h2>
             </a>
+
             <a href="/portfolio" class="button">
                 <h2 class="zero-padding">My Portfolio</h2>
             </a>
         </div>
+
         <hr>
     </div>
 </main>
