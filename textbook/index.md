@@ -23,8 +23,8 @@ is_complete: false
 > ときどき剪定したり生やしたりしてる...
 
 - 学術（Academia）
-  - [形式科学（Formal sciences）](textbook/formal_sciences)
-    - [数学](textbook/formal_sciences/mathematics)
+  - [形式科学（Formal sciences）](/textbook/formal_sciences/)
+    - [数学](/textbook/formal_sciences/mathematics/)
       - 代数学
       - 幾何学
       - 解析学
@@ -36,12 +36,15 @@ is_complete: false
         - 確率論
         - 数理統計
 
-    - [計算機科学（Computer Science）](textbook/formal_sciences/computer_science)
+    - [計算機科学（Computer Science）](/textbook/formal_sciences/computer_science/)
       - 理論計算機科学
         - 計算理論
         - オートマトン・形式言語
         - 計算量理論
-      - アルゴリズムとデータ構造
+      - [アルゴリズムとデータ構造](/textbook/formal_sciences/computer_science/algorithms/)
+        - [アルゴリズムの評価](/textbook/formal_sciences/computer_science/algorithms/algorithm_evaluation.md)
+      - [プログラミング言語](/textbook/formal_sciences/computer_science/programming_languages/)
+        - [Rust](/textbook/formal_sciences/computer_science/programming_languages/rust/)
       - プログラミング言語理論
         - 型理論
         - 意味論
@@ -50,7 +53,9 @@ is_complete: false
         - プログラム検証
         - 定理証明
       - 暗号理論
-      - 計算可能性・論理
+      - [計算可能性・論理](/textbook/formal_sciences/computer_science/computability_theory.md)
+        - [チューリングマシン](/textbook/formal_sciences/computer_science/computability_theory/turing_machine.md)
+        - [理論チューリングマシン](/textbook/formal_sciences/computer_science/computability_theory/turing_machines.md)
 
     - 統計学
       - 推定
@@ -59,8 +64,10 @@ is_complete: false
       - 実験計画
       - 統計的学習理論
 
-  - 自然科学（Natural sciences）
+  - [自然科学（Natural sciences）](/textbook/natural_sciences/)
     - 物理学
+      - [単位・計量](/textbook/natural_sciences/physics/metrology/)
+        - [SI接頭辞](/textbook/natural_sciences/physics/metrology/si_prefix.md)
       - 古典力学
       - 電磁気学
       - 熱力学・統計力学
@@ -86,13 +93,14 @@ is_complete: false
       - 海洋学
       - 環境科学
 
-  - 工学・応用科学（Engineering & Applied sciences）
-    - 計算機工学・情報工学
+  - [工学・応用科学（Engineering & Applied sciences）](/textbook/engineering_applied_sciences/)
+    - [計算機工学・情報工学](/textbook/engineering_applied_sciences/computer_engineering/)
       - コンピュータアーキテクチャ
       - オペレーティングシステム
       - コンパイラ実装
       - 分散システム
-      - ネットワーク
+      - [ネットワーク](/textbook/engineering_applied_sciences/computer_engineering/networking/)
+        - [IPv4について](/textbook/engineering_applied_sciences/computer_engineering/networking/ipv4.md)
       - ストレージシステム
       - セキュリティ工学
       - ソフトウェア工学

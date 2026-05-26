@@ -3,9 +3,10 @@ title: SI接頭辞
 authors:
   - 371tti
 tags:
-- article
-- inbox
-- science
+- textbook
+- natural-science
+- physics
+- metrology
 - unit
 - SI
 is_complete: false

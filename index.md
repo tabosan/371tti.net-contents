@@ -11,12 +11,12 @@ is_complete: true
 
 
 ## コンテンツ
-- [Tools](tools): Tools セクションのトップページ
-- [Articles Inbox](article_inbox): 未分類記事の保管場所
-- [About This Site](about_this_site): サイトの概要や運営方針などの説明
-- [Textbook](textbook): 形式科学、自然科学、社会科学、人文科学などの学問分野に関する解説記事
-- [Portfolio](portfolio): 371tti のポートフォリオ
-- [Samples](samples): MDレンダラのテスト用サンプル
+- [Tools](tools/): Tools セクションのトップページ
+- [About This Site](about_this_site/): サイトの概要や運営方針などの説明
+- [Textbook](textbook/): 形式科学、自然科学、社会科学、人文科学などの学問分野に関する解説記事
+- [Articles Inbox](article_inbox/): 整理待ちの記事や退避中のメモ
+- [Portfolio](portfolio/): 371tti のポートフォリオ
+- [Samples](samples/): MDレンダラのテスト用サンプル
 
 ## API Playground
 - [Search](search.html): サイト内検索
@@ -30,5 +30,3 @@ is_complete: true
 
 ## Repository
 - [README.md](README.md): コンテンツリポジトリのREADME
-
-

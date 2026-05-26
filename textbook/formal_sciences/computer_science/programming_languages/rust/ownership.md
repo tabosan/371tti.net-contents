@@ -3,6 +3,9 @@ title: 所有権（Ownership）
 authors:
     - chatGPT
 tags:
+- textbook
+- formal-science
+- computer-science
 - programming-language
 - rust
 is_complete: true

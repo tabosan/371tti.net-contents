@@ -36,7 +36,7 @@ is_complete: false
 
 代表的なものには以下がある。
 
-* チューリングマシン
+* [チューリングマシン](computability_theory/turing_machine.md)
 * ラムダ計算
 * 再帰関数
 * レジスタマシン

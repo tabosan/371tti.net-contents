@@ -13,9 +13,9 @@ is_complete: false
 > 数学（すうがく、（英: mathematics）とは、数・量・空間についての「抽象的な科学」であり、また構造や変化などを研究する学問であって、純粋数学と応用数学から成る。実験数学は統合的であり、計算的アプローチや応用数学（特に計算機［コンピュータ］など）を使って純粋数学の研究を進めている。歴史上の実験数学的例は四色定理に、より古くはガウスやアルキメデスなどに見られる。 - [ウィキペディア](https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6)
 
 ## Tree
-- [数学](mathematics)
+- [数学](/textbook/formal_sciences/mathematics/)
   - 代数学
-    - [線形代数学](mathematics/algebra/linear_algebra.md)
+    - [線形代数学](/textbook/formal_sciences/mathematics/algebra/linear_algebra.md)
   - 幾何学
   - 解析学
   - 位相幾何学

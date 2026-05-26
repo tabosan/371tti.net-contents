@@ -3,6 +3,9 @@ title: Rust Code Examples
 authors:
     - chatGPT
 tags:
+- textbook
+- formal-science
+- computer-science
 - programming-language
 - rust
 is_complete: true

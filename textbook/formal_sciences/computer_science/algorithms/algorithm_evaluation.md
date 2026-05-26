@@ -3,8 +3,9 @@ title: アルゴリズムの評価
 authors: 
     - 371tti
 tags:
-- article
-- inbox
+- textbook
+- formal-science
+- computer-science
 - algorithm
 is_complete: false
 description: 一般的なアルゴリズムの評価基準について!(^^)!

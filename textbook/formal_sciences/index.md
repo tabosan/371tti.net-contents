@@ -13,8 +13,8 @@ is_complete: false
 
 
 ## Tree
-- [形式科学（Formal sciences）](formal_sciences)
-  - [数学](formal_sciences/mathematics)
+- [形式科学（Formal sciences）](/textbook/formal_sciences/)
+  - [数学](/textbook/formal_sciences/mathematics/)
     - 代数学
     - 幾何学
     - 解析学
@@ -26,12 +26,15 @@ is_complete: false
       - 確率論
       - 数理統計
 
-  - [計算機科学（Computer Science）](formal_sciences/computer_science)
+  - [計算機科学（Computer Science）](/textbook/formal_sciences/computer_science/)
     - 理論計算機科学
       - 計算理論
       - オートマトン・形式言語
       - 計算量理論
-    - アルゴリズムとデータ構造
+    - [アルゴリズムとデータ構造](/textbook/formal_sciences/computer_science/algorithms/)
+      - [アルゴリズムの評価](/textbook/formal_sciences/computer_science/algorithms/algorithm_evaluation.md)
+    - [プログラミング言語](/textbook/formal_sciences/computer_science/programming_languages/)
+      - [Rust](/textbook/formal_sciences/computer_science/programming_languages/rust/)
     - プログラミング言語理論
       - 型理論
       - 意味論
@@ -40,7 +43,9 @@ is_complete: false
       - プログラム検証
       - 定理証明
     - 暗号理論
-    - 計算可能性・論理
+    - [計算可能性・論理](/textbook/formal_sciences/computer_science/computability_theory.md)
+      - [チューリングマシン](/textbook/formal_sciences/computer_science/computability_theory/turing_machine.md)
+      - [理論チューリングマシン](/textbook/formal_sciences/computer_science/computability_theory/turing_machines.md)
     
   - 統計学
   - 推定

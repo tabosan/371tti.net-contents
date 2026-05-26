@@ -3,6 +3,9 @@ title: プログラミング言語
 authors: 
     - 371tti
 tags:
+- textbook
+- formal-science
+- computer-science
 - programming-language
 - index
 is_complete: false
@@ -33,3 +36,6 @@ is_complete: false
 - 実装方法による分類: コンパイル言語とインタプリタ言語など
 - その他の分類: 静的型付け言語と動的型付け言語など
 このような分類はあくまで便宜的なものであり、実際のプログラミング言語は複数のカテゴリにまたがることが多い。
+
+# 言語別ノート
+- [Rust](rust/)

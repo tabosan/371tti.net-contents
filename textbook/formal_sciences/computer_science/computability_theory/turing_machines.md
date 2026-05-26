@@ -3,10 +3,11 @@ title: 理論チューリングマシン
 authors: 
   - 371tti
 tags:
-- article
-- inbox
-- theory
-- turing machine
+- textbook
+- formal-science
+- computer-science
+- computability
+- turing-machine
 is_complete: false
 description: 停止性問題を解くために、まず Kerr ブラックホールを用意します。
 ---

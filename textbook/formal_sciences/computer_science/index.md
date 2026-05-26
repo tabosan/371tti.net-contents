@@ -28,7 +28,10 @@ is_complete: false
     - 計算理論
     - オートマトン・形式言語
     - 計算量理論
-  - アルゴリズムとデータ構造
+  - [アルゴリズムとデータ構造](/textbook/formal_sciences/computer_science/algorithms/)
+    - [アルゴリズムの評価](/textbook/formal_sciences/computer_science/algorithms/algorithm_evaluation.md)
+  - [プログラミング言語](/textbook/formal_sciences/computer_science/programming_languages/)
+    - [Rust](/textbook/formal_sciences/computer_science/programming_languages/rust/)
   - プログラミング言語理論
     - 型理論
     - 意味論
@@ -37,7 +40,9 @@ is_complete: false
     - プログラム検証
     - 定理証明
   - 暗号理論
-  - [計算可能性・論理](computer_science/computability_theory.md)
+  - [計算可能性・論理](/textbook/formal_sciences/computer_science/computability_theory.md)
+    - [チューリングマシン](/textbook/formal_sciences/computer_science/computability_theory/turing_machine.md)
+    - [理論チューリングマシン](/textbook/formal_sciences/computer_science/computability_theory/turing_machines.md)
 
 ## 概要
 コンピュータサイエンスは、アルゴリズム、データ構造、計算理論、プログラミング言語、計算機アーキテクチャ、オペレーティングシステム、ネットワーク、データベース、人工知能など、
@@ -71,5 +76,3 @@ is_complete: false
 コンピュータサイエンスは、現代社会の基盤を支える技術の多くを生み出してきた。
 歴史的には第2次世界大戦中の暗号解読や、初期の電子計算機の開発に端を発する。
 その後、インターネット、モバイルコンピューティング、クラウドサービス、人工知能など、数多くの革新的な技術がこの分野から生まれた。
-
-

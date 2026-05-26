@@ -3,6 +3,9 @@ title: Rust Programming Language
 authors: 
     - 371tti
 tags:
+- textbook
+- formal-science
+- computer-science
 - programming-language
 - rust
 - index
@@ -152,3 +155,13 @@ Rust は「速い言語」でも「安全な言語」でもあるが、
 ## 歴史
 もともとMozillaの社員であったグレイ・ドーガン（Graydon Hoare）によって2006年に開発が始められたシステムプログラミング言語。
 あとにMozillaの研究プロジェクトとして採用され、2010年に初の公式リリースが行われた。
+
+## Rust ノート
+- [所有権](ownership.md)
+- [借用](borrowing.md)
+- [ライフタイム](lifetime.md)
+- [ジェネリクスとトレイト](generics_traits.md)
+- [エラー処理](error_handling.md)
+- [並行性](concurrency.md)
+- [予約語](予約語.md)
+- [コード例](code_example.md)
