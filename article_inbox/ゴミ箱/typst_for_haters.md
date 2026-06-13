@@ -2,7 +2,6 @@
 title: 設計が悪い
 authors: 
     - tabosan
-    - 371tti
 tags:
 - article
 - archive
